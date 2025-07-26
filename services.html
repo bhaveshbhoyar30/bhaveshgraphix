@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Perfect Digital Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8fafc;
+        }
+        
+        .service-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .price-badge {
+            position: absolute;
+            top: -15px;
+            right: 20px;
+            background: linear-gradient(135deg, #3c90eb, #1304e1);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: 600;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, #f39e0a, #eedb38);
+        }
+        
+        .contact-btn {
+            background: linear-gradient(135deg, #10b981, #059669);
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero-section text-white py-20 px-4 md:px-10 lg:px-20">
+        <div class="max-w-6xl mx-auto">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Digital Solutions Tailored for Your Business</h1>
+            <p class="text-xl md:text-2xl opacity-90 mb-8">Professional services at competitive market prices</p>
+            <div class="flex flex-wrap gap-4">
+                <button class="bg-white text-blue-700 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition">
+                    Get a Free Quote
+                </button>
+                <button class="border-2 border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-blue-700 transition">
+                    Browse Services
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-16 px-4 md:px-10 lg:px-20 max-w-6xl mx-auto">
+        <!-- Branding & Graphic Design -->
+        <div class="mb-20">
+            <h2 class="text-3xl font-bold mb-2 text-gray-800">Branding & Graphic Design</h2>
+            <p class="text-gray-600 mb-8">Create a memorable identity that stands out in the market</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Logo Design -->
+                <div class="service-card bg-white rounded-xl p-6 relative shadow-md">
+                    <div class="price-badge">₹5,000 - ₹25,000</div>
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <img src="https://placehold.co/40" alt="Minimalist logo design icon with abstract shape on teal background" class="w-8 h-8">
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">Logo Design</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Crafting unique and memorable logos that capture your brand's essence and values.</p>
+                    <ul class="text-gray-600 space-y-2 mb-6">
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>3 initial concepts</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>Unlimited revisions</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>All file formats</span>
+                        </li>
+                    </ul>
+                    <button class="w-full border-2 border-blue-500 text-blue-500 py-2 rounded-lg font-medium hover:bg-blue-50 transition">
+                        Learn More
+                    </button>
+                </div>
+
+                <!-- Business Card -->
+                <div class="service-card bg-white rounded-xl p-6 relative shadow-md">
+                    <div class="price-badge">₹2,000 - ₹8,000</div>
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <img src="https://placehold.co/40" alt="Business card icon with contact information on white background" class="w-8 h-8">
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">Business Card Design</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Professional designs that make your first impression count with clients and partners.</p>
+                    <ul class="text-gray-600 space-y-2 mb-6">
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>Print-ready files</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>Front & back design</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>Bleed & safe area</span>
+                        </li>
+                    </ul>
+                    <button class="w-full border-2 border-blue-500 text-blue-500 py-2 rounded-lg font-medium hover:bg-blue-50 transition">
+                        Learn More
+                    </button>
+                </div>
+
+                <!-- Packaging Design -->
+                <div class="service-card bg-white rounded-xl p-6 relative shadow-md">
+                    <div class="price-badge">₹8,000 - ₹50,000</div>
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <img src="https://placehold.co/40" alt="Cosmetic product packaging icon with clean modern design" class="w-8 h-8">
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">Packaging Design</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Eye-catching packaging solutions for food, cosmetics and other products that attract customers.</p>
+                    <ul class="text-gray-600 space-y-2 mb-6">
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>3D mockups</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>Print-ready files</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>Brand compliance</span>
+                        </li>
+                    </ul>
+                    <button class="w-full border-2 border-blue-500 text-blue-500 py-2 rounded-lg font-medium hover:bg-blue-50 transition">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Website Design & Development -->
+        <div class="mb-20">
+            <h2 class="text-3xl font-bold mb-2 text-gray-800">Website Design & Development</h2>
+            <p class="text-gray-600 mb-8">Build your digital presence with professional websites</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Static Website -->
+                <div class="service-card bg-white rounded-xl p-6 relative shadow-md">
+                    <div class="price-badge">₹15,000 - ₹50,000</div>
+                    <div class="flex items-center mb-4">
+                        <div class="bg-purple-100 p-3 rounded-full mr-4">
+                            <img src="https://placehold.co/40" alt="Website browser window icon with responsive design elements" class="w-8 h-8">
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">Static Business Website</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Professional website to showcase your business, services and contact information.</p>
+                    <ul class="text-gray-600 space-y-2 mb-6">
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>5-10 pages</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>Mobile responsive</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>Basic SEO setup</span>
+                        </li>
+                    </ul>
+                    <button class="w-full border-2 border-purple-500 text-purple-500 py-2 rounded-lg font-medium hover:bg-purple-50 transition">
+                        Learn More
+                    </button>
+                </div>
+
+                <!-- E-commerce -->
+                <div class="service-card bg-white rounded-xl p-6 relative shadow-md">
+                    <div class="price-badge">₹25,000 - ₹1,50,000</div>
+                    <div class="flex items-center mb-4">
+                        <div class="bg-purple-100 p-3 rounded-full mr-4">
+                            <img src="https://placehold.co/40" alt="Shopping cart icon with credit card payment elements" class="w-8 h-8">
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">E-commerce Website</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Complete online store setup with product listings, cart and payment processing.</p>
+                    <ul class="text-gray-600 space-y-2 mb-6">
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>Product management</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>Payment gateway</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>Order tracking</span>
+                        </li>
+                    </ul>
+                    <button class="w-full border-2 border-purple-500 text-purple-500 py-2 rounded-lg font-medium hover:bg-purple-50 transition">
+                        Learn More
+                    </button>
+                </div>
+
+                <!-- Website Maintenance -->
+                <div class="service-card bg-white rounded-xl p-6 relative shadow-md">
+                    <div class="price-badge" style="background: linear-gradient(135deg, #6b7280, #4b5563)">₹3,000/month</div>
+                    <div class="flex items-center mb-4">
+                        <div class="bg-purple-100 p-3 rounded-full mr-4">
+                            <img src="https://placehold.co/40" alt="Gear icon with wrench representing website maintenance" class="w-8 h-8">
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">Website Maintenance</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Keep your website updated, secure and performing at its best with our maintenance plans.</p>
+                    <ul class="text-gray-600 space-y-2 mb-6">
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>Regular updates</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>Security monitoring</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>Content updates</span>
+                        </li>
+                    </ul>
+                    <button class="w-full border-2 border-purple-500 text-purple-500 py-2 rounded-lg font-medium hover:bg-purple-50 transition">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Social Media Marketing -->
+        <div class="mb-20">
+            <h2 class="text-3xl font-bold mb-2 text-gray-800">Social Media Marketing</h2>
+            <p class="text-gray-600 mb-8">Grow your audience and engagement across platforms</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Social Media Management -->
+                <div class="service-card bg-white rounded-xl p-6 relative shadow-md">
+                    <div class="price-badge" style="background: linear-gradient(135deg, #f59e0b, #d97706)">₹10,000/month</div>
+                    <div class="flex items-center mb-4">
+                        <div class="bg-orange-100 p-3 rounded-full mr-4">
+                            <img src="https://placehold.co/40" alt="Social media icons floating in a circle" class="w-8 h-8">
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">Social Media Management</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Professional management of your Instagram, Facebook and other social media accounts.</p>
+                    <ul class="text-gray-600 space-y-2 mb-6">
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>15 posts/month</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>Daily engagement</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>Analytics reports</span>
+                        </li>
+                    </ul>
+                    <button class="w-full border-2 border-orange-500 text-orange-500 py-2 rounded-lg font-medium hover:bg-orange-50 transition">
+                        Learn More
+                    </button>
+                </div>
+
+                <!-- Paid Ads -->
+                <div class="service-card bg-white rounded-xl p-6 relative shadow-md">
+                    <div class="price-badge" style="background: linear-gradient(135deg, #f59e0b, #d97706)">20% of ad spend</div>
+                    <div class="flex items-center mb-4">
+                        <div class="bg-orange-100 p-3 rounded-full mr-4">
+                            <img src="https://placehold.co/40" alt="Dollar sign with arrow up representing paid advertising" class="w-8 h-8">
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">Paid Ad Campaigns</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Targeted Facebook and Instagram ads to reach potential customers interested in your services.</p>
+                    <ul class="text-gray-600 space-y-2 mb-6">
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>Campaign setup</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>Audience targeting</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>Performance reports</span>
+                        </li>
+                    </ul>
+                    <button class="w-full border-2 border-orange-500 text-orange-500 py-2 rounded-lg font-medium hover:bg-orange-50 transition">
+                        Learn More
+                    </button>
+                </div>
+
+                <!-- Influencer Marketing -->
+                <div class="service-card bg-white rounded-xl p-6 relative shadow-md">
+                    <div class="price-badge" style="background: linear-gradient(135deg, #f59e0b, #d97706)">₹5,000 - ₹50,000</div>
+                    <div class="flex items-center mb-4">
+                        <div class="bg-orange-100 p-3 rounded-full mr-4">
+                            <img src="https://placehold.co/40" alt="Influencer icon with multiple users and stars" class="w-8 h-8">
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">Influencer Marketing</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Collaborate with local influencers to promote your brand and reach new audiences.</p>
+                    <ul class="text-gray-600 space-y-2 mb-6">
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>Influencer identification</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>Campaign management</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>ROI tracking</span>
+                        </li>
+                    </ul>
+                    <button class="w-full border-2 border-orange-500 text-orange-500 py-2 rounded-lg font-medium hover:bg-orange-50 transition">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 px-4 md:px-10 bg-blue-50">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Ready to elevate your business?</h2>
+            <p class="text-xl text-gray-600 mb-8">Get a customized quote based on your specific requirements</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <button class="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition shadow-md">
+                    Request Free Consultation
+                </button>
+                <button class="border-2 border-blue-600 text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-100 transition">
+                    Call Us: +91-XXXXXXXXXX
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 px-4 md:px-10">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-xl font-semibold mb-4">Perfect Digital Solutions</h3>
+                <p class="text-gray-400">Helping businesses establish and grow their digital presence with professional services at competitive market prices.</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+                <ul class="space-y-2 text-gray-400">
+                    <li><a href="#" class="hover:text-white transition">Home</a></li>
+                    <li><a href="#" class="hover:text-white transition">Services</a></li>
+                    <li><a href="#" class="hover:text-white transition">Portfolio</a></li>
+                    <li><a href="#" class="hover:text-white transition">About Us</a></li>
+                    <li><a href="#" class="hover:text-white transition">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold mb-4">Contact Us</h3>
+                <address class="not-italic text-gray-400">
+                    <p class="mb-2">123 Business Street, City</p>
+                    <p class="mb-2">Email: info@perfectdigitals.com</p>
+                    <p>Phone: +91-XXXXXXXXXX</p>
+                </address>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto mt-12 pt-6 border-t border-gray-800 text-center text-gray-400">
+            <p>© 2023 Perfect Digital Solutions. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

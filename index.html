@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elevate | Digital Marketing Agency</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .gradient-text {
+            background: linear-gradient(90deg, #fad749, #d48206);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #f0fdfa 0%, #ce9731 100%);
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <img src="logo.jpg" alt="Abstract teal minimalist logo shape representing modern digital marketing" class="h-8 w-8"/>
+                        <span class="ml-2 text-xl font-bold gradient-text">BHAVESH GRAPHIX</span>
+                    </div>
+                </div>
+                <div class="hidden md:ml-6 md:flex md:items-center md:space-x-8">
+                    <a href="services.html" class="text-gray-700 hover:text-teal-600 px-3 py-2 text-sm font-medium">Services</a>
+                    <a href="#portfolio" class="text-gray-700 hover:text-teal-600 px-3 py-2 text-sm font-medium">Portfolio</a>
+                    <a href="about.html" class="text-gray-700 hover:text-teal-600 px-3 py-2 text-sm font-medium">About</a>
+                    <a href="#contact" class="bg-teal-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-teal-700 transition duration-300">Get Started</a>
+                </div>
+                <div class="-mr-2 flex items-center md:hidden">
+                    <button type="button" id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-teal-600 focus:outline-none">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="services.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-teal-600">Services</a>
+                <a href="#portfolio" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-teal-600">Portfolio</a>
+                <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-teal-600">About</a>
+                <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-white bg-teal-600 hover:bg-teal-700">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient pt-32 pb-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                        Elevate Your <span class="gradient-text">Brand's Digital Presence</span>
+                    </h1>
+                    <p class="text-lg text-gray-600 mb-8">
+                        We craft modern digital experiences that help businesses grow and connect with their audience.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#contact" class="px-6 py-3 bg-teal-600 text-white rounded-md font-medium hover:bg-teal-700 transition duration-300">
+                            Get Started
+                        </a>
+                        <a href="services.html" class="px-6 py-3 border border-teal-600 text-teal-600 rounded-md font-medium hover:bg-teal-50 transition duration-300">
+                            Our Services
+                        </a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/a00673a0-971f-4a68-9319-12ff9876236b.png" alt="Digital marketing team working collaboratively in a modern office space with laptops and design materials" class="rounded-lg shadow-xl w-full"/>
+                    <div class="absolute -bottom-6 -right-6 bg-white p-4 rounded-lg shadow-lg hidden md:block">
+                        <div class="flex items-center">
+                            <div class="bg-teal-100 p-3 rounded-full mr-3">
+                                <i class="fas fa-award text-teal-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm font-medium text-gray-600">Trusted by</p>
+                                <p class="text-lg font-bold text-gray-900">100+ Businesses</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="inline-block px-3 py-1 text-sm font-medium bg-teal-100 text-teal-800 rounded-full mb-4">Our Services</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Comprehensive <span class="gradient-text">Digital Solutions</span></h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    We offer a full suite of digital marketing services to transform your brand's online presence.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Branding Services -->
+                <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100 service-card transition duration-300">
+                    <div class="bg-teal-100 p-3 rounded-lg inline-block mb-4">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4d19fb8b-9483-4188-a48f-8d5c2ec6c4a7.png" alt="Minimalist abstract logo design icon on teal background" class="h-8 w-8"/>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Brand Identity</h3>
+                    <p class="text-gray-600 mb-4">Create a memorable brand identity that stands out in the market.</p>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-teal-500 mt-1 mr-2"></i>
+                            <span>Logo Design</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-teal-500 mt-1 mr-2"></i>
+                            <span>Business Card Design</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-teal-500 mt-1 mr-2"></i>
+                            <span>Packaging Design</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Website Services -->
+                <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100 service-card transition duration-300">
+                    <div class="bg-teal-100 p-3 rounded-lg inline-block mb-4">
+                        <i class="fas fa-globe text-teal-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Website Solutions</h3>
+                    <p class="text-gray-600 mb-4">Powerful digital experiences that drive results and engagement.</p>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-teal-500 mt-1 mr-2"></i>
+                            <span>Website Design & Development</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-teal-500 mt-1 mr-2"></i>
+                            <span>Static Business Website</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-teal-500 mt-1 mr-2"></i>
+                            <span>E-commerce Website</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-teal-500 mt-1 mr-2"></i>
+                            <span>Website Maintenance</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Social Media Services -->
+                <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100 service-card transition duration-300">
+                    <div class="bg-teal-100 p-3 rounded-lg inline-block mb-4">
+                        <i class="fas fa-hashtag text-teal-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Social Media Marketing</h3>
+                    <p class="text-gray-600 mb-4">Strategic social media campaigns that grow your audience and engagement.</p>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-teal-500 mt-1 mr-2"></i>
+                            <span>Social Media Management</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-teal-500 mt-1 mr-2"></i>
+                            <span>Paid Ad Campaigns</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-teal-500 mt-1 mr-2"></i>
+                            <span>Influencer Marketing</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="inline-block px-3 py-1 text-sm font-medium bg-teal-100 text-teal-800 rounded-full mb-4">Our Work</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Successful <span class="gradient-text">Brand Transformations</span></h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    See how we've helped businesses elevate their digital presence.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ad435503-a246-48e3-899c-d766d04b7206.png" alt="Before and after of a restaurant's brand identity redesign showing logo, menu, and packaging" class="w-full h-full object-cover"/>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Café Royale Rebrand</h3>
+                        <p class="text-gray-600 mb-4">Complete branding refresh including logo, packaging, and menu design.</p>
+                        <span class="inline-block px-3 py-1 text-xs font-medium bg-teal-100 text-teal-800 rounded-full">Brand Identity</span>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/2d84b60c-0e85-4cf7-bb14-94aab780195d.png" alt="Modern e-commerce website design for a fashion boutique with clean product display" class="w-full h-full object-cover"/>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Boutique E-commerce</h3>
+                        <p class="text-gray-600 mb-4">Custom e-commerce solution with integrated payment processing.</p>
+                        <span class="inline-block px-3 py-1 text-xs font-medium bg-teal-100 text-teal-800 rounded-full">Web Development</span>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/0fd173d7-e8cb-4b76-bfba-f00707e6279e.png" alt="Social media marketing campaign dashboard showing engagement growth analytics" class="w-full h-full object-cover"/>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Fitness Apparel Campaign</h3>
+                        <p class="text-gray-600 mb-4">Social media strategy that increased engagement by 250% in 3 months.</p>
+                        <span class="inline-block px-3 py-1 text-xs font-medium bg-teal-100 text-teal-800 rounded-full">Social Media</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-10">
+                <a href="#" class="px-6 py-3 border border-teal-600 text-teal-600 rounded-md font-medium hover:bg-teal-50 transition duration-300 inline-flex items-center">
+                    View All Projects
+                    <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1">
+                    <span class="inline-block px-3 py-1 text-sm font-medium bg-teal-100 text-teal-800 rounded-full mb-4">Who We Are</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                        Digital Marketing <span class="gradient-text">Experts</span>
+                    </h2>
+                    <p class="text-lg text-gray-600 mb-6">
+                        Founded in 2020, Elevate Digital Marketing has helped businesses of all sizes establish and grow their online presence. Our team of designers, developers, and marketers bring diverse expertise to every project.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="bg-teal-100 p-2 rounded-full mr-4 flex-shrink-0">
+                                <i class="fas fa-lightbulb text-teal-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-gray-900">Creative Solutions</h4>
+                                <p class="text-gray-600">We think outside the box to deliver unique branding that stands out.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-teal-100 p-2 rounded-full mr-4 flex-shrink-0">
+                                <i class="fas fa-chart-line text-teal-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-gray-900">Data-Driven</h4>
+                                <p class="text-gray-600">Our strategies are backed by analytics and market research.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-teal-100 p-2 rounded-full mr-4 flex-shrink-0">
+                                <i class="fas fa-users text-teal-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-gray-900">Client-Focused</h4>
+                                <p class="text-gray-600">Your success is our priority - we tailor solutions to your needs.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-1 md:order-2">
+                    <div class="relative">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/0b19e0a1-c98e-438d-b3af-82bda1c3128b.png" alt="Diverse team of digital marketing professionals collaborating in a modern office space" class="rounded-lg shadow-xl w-full"/>
+                        <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-lg shadow-lg hidden md:block">
+                            <div class="text-center">
+                                <p class="text-3xl font-bold text-teal-600 mb-1">5+</p>
+                                <p class="text-gray-600">Years Experience</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="inline-block px-3 py-1 text-sm font-medium bg-teal-100 text-teal-800 rounded-full mb-4">Testimonials</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">What Our <span class="gradient-text">Clients Say</span></h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/76b5aecd-b65e-45f0-9d6c-7bb366c4235e.png" alt="Portrait of Sarah Johnson, Chief Marketing Officer at TechSolutions" class="w-12 h-12 rounded-full object-cover mr-4"/>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Sarah Johnson</h4>
+                            <p class="text-gray-600 text-sm">CMO, TechSolutions</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        "Elevate transformed our social media presence. In just three months, our engagement increased by 300% and we saw a significant boost in leads."
+                    </p>
+                    <div class="flex text-amber-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/cbf6ae59-db8b-4f3b-bb60-6f48618b42a3.png" alt="Portrait of Michael Chen, Founder and CEO of UrbanEats" class="w-12 h-12 rounded-full object-cover mr-4"/>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Michael Chen</h4>
+                            <p class="text-gray-600 text-sm">Founder, UrbanEats</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        "The branding package they created perfectly captured our vision. Our sales have increased by 150% since the rebrand launched."
+                    </p>
+                    <div class="flex text-amber-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/dbf2cde7-9c0e-4659-b98d-fb46d379a6e5.png" alt="Portrait of David Rodriguez, Marketing Director at LuxeBeauty" class="w-12 h-12 rounded-full object-cover mr-4"/>
+                        <div>
+                            <h4 class="font-bold text-gray-900">David Rodriguez</h4>
+                            <p class="text-gray-600 text-sm">Marketing Director, LuxeBeauty</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        "From website development to ongoing maintenance, Elevate has been an invaluable partner. Their team is responsive, professional, and truly cares."
+                    </p>
+                    <div class="flex text-amber-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-teal-600 to-teal-700 text-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to <span class="gradient-text">Boost</span> Your Business?</h2>
+                    <p class="text-lg opacity-90 mb-8">
+                        Schedule a free consultation with our team to discuss your project and how we can help you achieve your goals.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="tel:+15551234567" class="px-6 py-3 bg-white text-teal-600 rounded-md font-medium hover:bg-gray-100 transition duration-300 inline-flex items-center">
+                            <i class="fas fa-phone-alt mr-2"></i>
+                            Call Us
+                        </a>
+                        <a href="mailto:hello@elevate.digital" class="px-6 py-3 border border-white text-white rounded-md font-medium hover:bg-white hover:text-teal-600 transition duration-300 inline-flex items-center">
+                            <i class="fas fa-envelope mr-2"></i>
+                            Email Us
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-lg">
+                    <h3 class="text-xl font-bold text-gray-900 mb-6">Get a Free Quote</h3>
+                    <form id="contact-form">
+                        <div class="mb-4">
+                            <input type="text" placeholder="Your Name" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent">
+                        </div>
+                        <div class="mb-4">
+                            <input type="email" placeholder="Email Address" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent">
+                        </div>
+                        <div class="mb-4">
+                            <select class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent">
+                                <option value="">Select a Service</option>
+                                <option value="branding">Brand Identity (Logo, Business Cards, Packaging)</option>
+                                <option value="web">Website Design & Development</option>
+                                <option value="ecommerce">E-commerce Solutions</option>
+                                <option value="social">Social Media Marketing</option>
+                            </select>
+                        </div>
+                        <div class="mb-4">
+                            <textarea rows="4" placeholder="Tell us about your project" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-teal-600 text-white py-3 rounded-md font-medium hover:bg-teal-700 transition duration-300">
+                            Submit Request
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="col-span-1">
+                    <div class="flex items-center mb-4">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/c116a020-b89f-4e3c-92e2-488ec11af50b.png" alt="Abstract teal minimalist logo shape representing Elevate Digital Marketing" class="h-8 w-8"/>
+                        <span class="ml-2 text-xl font-bold text-white">BHAVESH GRAPHIX</span>
+                    </div>
+                    <p class="mb-4 text-gray-400">
+                        Digital marketing solutions to help your business grow and thrive in the online world.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Brand Identity</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Website Design</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">E-commerce</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Social Media</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Portfolio</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Testimonials</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Careers</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-4">Contact</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-teal-400 mt-1 mr-3"></i>
+                            <span>123 nagpur,0<br></span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt text-teal-400 mr-3"></i>
+                            <span>+91 8799977623</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope text-teal-400 mr-3"></i>
+                            <span>bhaveshbhoyar30@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 text-sm mb-4 md:mb-0">
+                    © 2023 BHAVESH GRAPHIX Digital Marketing. All rights reserved.
+                </p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-500 hover:text-gray-300 text-sm">Privacy Policy</a>
+                    <a href="#" class="text-gray-500 hover:text-gray-300 text-sm">Terms of Service</a>
+                    <a href="#" class="text-gray-500 hover:text-gray-300 text-sm">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+
+        // Form submission
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // You would typically send form data to a server here
+            alert('Thank you for your message! We will get back to you shortly.');
+            this.reset();
+        });
+
+        // Animate elements when they come into view
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fadeIn');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.service-card, .testimonial, .portfolio-item').forEach(item => {
+            observer.observe(item);
+        });
+    </script>
+</body>
+</html>
+
